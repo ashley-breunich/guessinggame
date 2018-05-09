@@ -64,3 +64,5 @@ if(manhattan === 'yes' || manhattan === 'y'){
 } else {
     alert('Wrong! Do you even know me, ' + userName + '?');
 }
+
+alert('Thanks for playing, ' + userName + '! I hope you got to know me a little better.');
