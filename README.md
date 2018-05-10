@@ -1,4 +1,4 @@
-Alt-H1 A Guessing Game
+# A Guessing Game
 ======
 This is a guessing game all about Ashley. Get to know me by:
 
