@@ -84,7 +84,11 @@ for (var i = 0; i < 4; i++) {
   } else if (states > 4){
     alert('A little lower, ' + userName + '.');
   } else {
-    alert('A little higher, ' + userName + '.');
+    if (i > 4) {
+      alert('Better luck next time!');
+    } else {
+      alert('A little higher, ' + userName + '.');
+    }
   }
 }
 
