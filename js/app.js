@@ -3,9 +3,9 @@
 var userPoints = 0;
 
 // Welcome message
-alert('Hey there and welcome to my guessing game! Answer the following questions to learn some fun facts about me.');
+alert('Hey there and welcome to my guessing game! Answer the following questions to learn some fun facts about me. For every question you guess correctly, you will win 1 point!');
 
-var userName = prompt('Before you get to know me, I would like to get to know you a bit. Please tell me your name.');
+var userName = prompt('Before you get to know me, I would like to get to know you. Please tell me your name.');
 
 console.log(userName);
 
@@ -69,7 +69,7 @@ if(manhattan === 'yes' || manhattan === 'y'){
   alert('You guessed correct, ' + userName + '! My go-to order is a Manhattan with Maker\'s Mark.');
   userPoints++;
 } else {
-  alert('Wrong! Do you even know me, ' + userName + '?');
+  alert('Wrong! What\'s better than a Manhattan with Maker\'s Mark, ' + userName + '?');
 }
 
 // Question 6 - How many states have I lived in?
