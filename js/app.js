@@ -74,8 +74,6 @@ if(manhattan === 'yes' || manhattan === 'y'){
 
 // Question 6 - How many states have I lived in?
 
-console.log(states);
-
 for (var i = 0; i < 4; i++) {
   var states = prompt('In how many states have I lived?', 'type in a number').toLowerCase();
   console.log(states);
