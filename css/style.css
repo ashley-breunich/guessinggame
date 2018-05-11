@@ -1,8 +1,8 @@
 * {
     background-color: #E6E6FA;
     color: #3f3f3f;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 h1 {
@@ -55,4 +55,12 @@ ul {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 22px;
+}
+
+#navigation {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    display: inline;
+    list-style-type: none;
+    font-weight: 200px;
 }
