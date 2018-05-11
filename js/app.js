@@ -79,7 +79,7 @@ console.log(states);
 for (var i = 0; i < 4; i++) {
   var states = prompt('In how many states have I lived?', 'type in a number').toLowerCase();
   console.log(states);
-  if(states === 4){
+  if(states == 4){
     alert('You are correct, ' + userName + '! I have lived in Connecticut, New York, California and Washington.');
     userPoints++;
     break;
