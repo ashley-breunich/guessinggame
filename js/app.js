@@ -1,5 +1,7 @@
 'use strict';
 
+var userPoints = 0;
+
 // Welcome message
 alert('Hey there and welcome to my guessing game! Answer the following questions to learn some fun facts about me.');
 
@@ -17,6 +19,7 @@ console.log(catPerson);
 
 if(catPerson === 'yes' || catPerson === 'y'){
   alert('Excellent job, ' + userName + '. I am indeed OBSESSED with cats and have an adorable orange tabby named Ponyo.');
+  userPoints++;
 } else {
   alert('I am definitely a cat person, ' + userName + ' and can\'t believe you would think otherwise!');
 }
@@ -28,6 +31,7 @@ console.log(redHair);
 
 if(redHair === 'yes' || redHair === 'y'){
   alert('You are correct, ' + userName + '! I have never dyed my hair in my life.');
+  userPoints++;
 } else {
   alert('Incorrect! I have never dyed my hair in my life.');
 }
@@ -39,6 +43,7 @@ console.log(snowBoard);
 
 if(snowBoard === 'no' || snowBoard === 'n'){
   alert('That\'s right, ' + userName + '! I prefer to ski my way down the slopes.');
+  userPoints++;
 } else {
   alert('No way, ' + userName + '! I am a ski bum :)');
 }
@@ -50,6 +55,7 @@ console.log(morningPerson);
 
 if(morningPerson === 'no' || morningPerson === 'n'){
   alert('You know me so well, ' + userName + '! I love sleep and dread waking up early.');
+  userPoints++;
 } else {
   alert('No way, ' + userName + '. I love sleeping in.');
 }
@@ -60,9 +66,10 @@ var manhattan = prompt('Is my favorite cocktail a Manhattan?' , 'type yes or no'
 console.log(manhattan);
 
 if(manhattan === 'yes' || manhattan === 'y'){
-  alert ('You guessed correct, ' + userName + '! My go-to order is a Manhattan with Maker\'s Mark.');
+  alert('You guessed correct, ' + userName + '! My go-to order is a Manhattan with Maker\'s Mark.');
+  userPoints++;
 } else {
   alert('Wrong! Do you even know me, ' + userName + '?');
 }
 
-alert('Thanks for playing, ' + userName + '! I hope you got to know me a little better.');
+alert ('Thanks for playing my game, ' + userName + '! You earned ' + userPoints + ' points out of 7 total points.');
