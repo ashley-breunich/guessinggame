@@ -90,10 +90,10 @@ for (var i = 0; i < 4; i++) {
 
 // Question 7 -
 
-var animal = prompt('Can you guess one of my favorite animals?').toLowerCase();
+// var animal = prompt('Can you guess one of my favorite animals?').toLowerCase();
 
-console.log(animal);
+// console.log(animal);
 
-var favoriteAnimals = ['cat', 'red panda', 'alpaca' , 'monkey'];
+// var favoriteAnimals = ['cat', 'red panda', 'alpaca' , 'monkey'];
 
 alert ('Thanks for playing my game, ' + userName + '! You earned ' + userPoints + ' points out of 7 total points.');
