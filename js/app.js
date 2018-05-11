@@ -72,4 +72,22 @@ if(manhattan === 'yes' || manhattan === 'y'){
   alert('Wrong! Do you even know me, ' + userName + '?');
 }
 
+// Question 6 - How many states have I lived in?
+
+console.log(states);
+
+for (var i = 0; i < 4; i++) {
+  var states = prompt('In how many states have I lived?', 'type in a number').toLowerCase();
+  console.log(states);
+  if(states === 4){
+    alert('You are correct, ' + userName + '! I have lived in Connecticut, New York, California and Washington.');
+    userPoints++;
+    break;
+  } else if (states > 4){
+    alert('A little lower, ' + userName + '.');
+  } else {
+    alert('A little higher, ' + userName + '.');
+  }
+}
+
 alert ('Thanks for playing my game, ' + userName + '! You earned ' + userPoints + ' points out of 7 total points.');
