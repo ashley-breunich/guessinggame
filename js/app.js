@@ -49,7 +49,7 @@ if(snowBoard === 'no' || snowBoard === 'n'){
 }
 
 // Question 4 - Morning Person
-var morningPerson = prompt('Am I a morning person?').toLowerCase();
+var morningPerson = prompt('Am I a morning person?' , 'type yes or no').toLowerCase();
 
 console.log(morningPerson);
 
@@ -97,8 +97,10 @@ for (var i = 0; i < 4; i++) {
 }
 
 // Question 7 -
+
 for (var turns = 0; turns < 6; turns++){
-  var animal = prompt('Can you guess one of my favorite animals? You have 6 chances to guess correctly.').toLowerCase();
+  var turnsLeft = 6 - turns;
+  var animal = prompt('Can you guess one of my favorite animals? You have ' + turnsLeft + ' chances to guess correctly.').toLowerCase();
   console.log(animal); // prints the user's animal
 
   var favoriteAnimals = ['wolf', 'red panda', 'alpaca', 'otter']; // lists the animal array
@@ -111,7 +113,11 @@ for (var turns = 0; turns < 6; turns++){
     userPoints++; //give them a point
     break; //break out of the loop
   } else { //if the user's animal doesn't match any of the animals in the array
-    alert('Try again! In case you were interested, my four favorite animals are a ' + favoriteAnimals[0] + ', ' + favoriteAnimals[1] + ', ' + favoriteAnimals [2] + ', and ' + favoriteAnimals[3] + '.');
+    if (turns < 5) {
+      alert ('Try again!');
+    } else {
+      alert('No matches! In case you are interested, my four favorite animals are a ' + favoriteAnimals[0] + ', ' + favoriteAnimals[1] + ', ' + favoriteAnimals [2] + ', and ' + favoriteAnimals[3] + '.');
+    }
   }
 }
 
