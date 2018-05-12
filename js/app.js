@@ -96,8 +96,7 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-// Question 7 -
-
+// Question 7 - Favorite Animal
 
 var favoriteAnimals = ['wolf', 'red panda', 'alpaca', 'otter']; // lists the animal array
 var animal;
