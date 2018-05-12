@@ -108,7 +108,7 @@ for (var turns = 0; turns < 6; turns++){
   for (i = 0; i < favoriteAnimals.length; i++){ // this loops through the array
     console.log(favoriteAnimals[i]); // This prints all of the elements in the array
   }
-  if (animal === favoriteAnimals){ // If the user's animal matches any of the animals in the array
+  if (animal === favoriteAnimals[0] || animal === favoriteAnimals[1] || animal === favoriteAnimals[2] || animal === favoriteAnimals[3]){ // If the user's animal matches any of the animals in the array
     alert('Congratulations, ' + userName + ' you guessed one! My four favorite animals are a ' + favoriteAnimals[0] + ', ' + favoriteAnimals[1] + ', ' + favoriteAnimals [2] + ', and ' + favoriteAnimals[3] + '.'); //congratulate them
     userPoints++; //give them a point
     break; //break out of the loop
