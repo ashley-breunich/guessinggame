@@ -77,7 +77,7 @@ if(manhattan === 'yes' || manhattan === 'y'){
 for (var i = 0; i < 4; i++) {
   var states = prompt('In how many states have I lived? You have 4 chances to guess correctly!', 'type in a number');
   console.log(states);
-  if(states == 4){
+  if(states === '4'){
     alert('You are correct, ' + userName + '! I have lived in Connecticut, New York, California and Washington.');
     userPoints++;
     break;
