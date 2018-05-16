@@ -126,31 +126,4 @@ while (counter < 7) {
   }
 }
 
-
-
-
-
-// for (var turns = 0; turns < 6; turns++) {
-//   var turnsLeft = 6 - turns
-//   var animal = prompt('Can you guess one of my favorite animals? You have ' + turnsLeft + ' chances to guess correctly.').toLowerCase()
-//   console.log(animal); // prints the user's animal
-
-//   var favoriteAnimals = ['wolf', 'red panda', 'alpaca', 'otter'] // lists the animal array
-
-//   for (i = 0; i < favoriteAnimals.length; i++) { // this loops through the array
-//     console.log(favoriteAnimals[i]); // This prints all of the elements in the array
-//     if (animal === favoriteAnimals[i]) { // If the user's animal matches any of the animals in the array
-//       alert('Congratulations, ' + userName + ' you guessed one! My four favorite animals are a ' + favoriteAnimals[0] + ', ' + favoriteAnimals[1] + ', ' + favoriteAnimals[2] + ', and ' + favoriteAnimals[3] + '.') // congratulate them
-//       userPoints++; // give them a point
-//       break; // break out of the loop
-//     } else { // if the user's animal doesn't match any of the animals in the array
-//         alert('Try again!');
-
-//       } else {
-//         alert('No matches! In case you are interested, my four favorite animals are a ' + favoriteAnimals[0] + ', ' + favoriteAnimals[1] + ', ' + favoriteAnimals[2] + ', and ' + favoriteAnimals[3] + '.')
-//       }
-//     }
-//   }
-// }
-
 alert('Thanks for playing my game, ' + userName + '! You earned ' + userPoints + ' points out of 7 total points.');
