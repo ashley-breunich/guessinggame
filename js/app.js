@@ -89,8 +89,9 @@ questFive();
 
 // Question 6 - How many states have I lived in?
 function questSix () {
+  var totalChances = 4;
   for (var i = 0; i < 4; i++) {
-    var states = prompt('In how many states have I lived? You have 4 chances to guess correctly!', 'type in a number');
+    var states = prompt('In how many states have I lived? You have ' + (totalChances - i) + ' chances to guess correctly!', 'type in a number');
     console.log(states);
     if (states === '4') {
       alert('You are correct, ' + userName + '! I have lived in Connecticut, New York, California and Washington.');
@@ -117,11 +118,12 @@ questSix ();
 function cute() {
   var favoriteAnimals = ['wolf', 'red panda', 'alpaca', 'otter']; // lists the animal array
   var animal;
+  var totalGuesses = 6;
   var counter = 0;
   var rightAnswer;
 
   while (counter < 7) {
-    animal = prompt('Can you guess one of my favorite animals? You have 6 chances to guess correctly.').toLowerCase();
+    animal = prompt('Can you guess one of my favorite animals? You have ' + (totalGuesses - counter) + ' chances to guess correctly.').toLowerCase();
     console.log(animal); // prints the user's animal
     for (var i = 0; i < favoriteAnimals.length; i++) { // this loops through the array
       console.log(favoriteAnimals[i]); // This prints all of the elements in the array
@@ -138,7 +140,7 @@ function cute() {
       userPoints++; // give them a point
     }
     if (counter === 6) {
-      alert('No matches! In case you are interested, my four favorite animals are a wolf, red panda, alpaca and otter');
+      alert('No matches! In case you are interested, my four favorite animals are a wolf, red panda, alpaca and otter.');
       break;
     }
   }
