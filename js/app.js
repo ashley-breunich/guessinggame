@@ -132,7 +132,7 @@ function cute() {
       }
     }
     if (!rightAnswer) {
-      alert('Try again!');
+      alert('Wrong answer. Try again!');
       counter++;
     } else {
       alert('Congratulations, ' + userName + ' you guessed one! My four favorite animals are a wolf, red panda, alpaca and otter.'); // congratulate them
@@ -141,7 +141,7 @@ function cute() {
     }
     if (counter === 6) {
       alert('No matches! In case you are interested, my four favorite animals are a wolf, red panda, alpaca and otter.');
-      break;
+      counter += 7;
     }
   }
 }
