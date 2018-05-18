@@ -131,7 +131,7 @@ function cute() {
         rightAnswer = true;
       }
     }
-    if (!rightAnswer) {
+    if (!rightAnswer && counter < 6) {
       alert('Wrong answer. Try again!');
       counter++;
     } else {
