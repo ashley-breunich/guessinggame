@@ -141,7 +141,7 @@ function cute() {
     }
     if (counter === 6) {
       alert('No matches! In case you are interested, my four favorite animals are a wolf, red panda, alpaca and otter.');
-      counter += 7;
+      break;
     }
   }
 }
